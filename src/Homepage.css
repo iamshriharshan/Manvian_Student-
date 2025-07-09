@@ -1,0 +1,74 @@
+@@ .. @@
+ /* General Reset & Layout */
+ body {
+   margin: 0;
+   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #f4f6f9;
+-  background-image: url('./assets/university.png');
+-  background-size: cover;
+-  background-repeat: no-repeat;
+-  background-attachment: fixed;
+-  background-position: center;
+-}
+-
+-/* Dark overlay on background image */
+-body::before {
+-  content: "";
+-  position: absolute;
+-  top: 0;
+-  left: 0;
+-  height: 100%;
+-  width: 100%;
+-  background: rgba(0, 0, 0, 0.5); /* dark transparent overlay */
+-  z-index: -1;
+ }
+ 
+ /* App Container */
+@@ .. @@
+   background-color: rgba(255, 255, 255, 0.75);
+   backdrop-filter: blur(0px);
+ }
+ 
++/* Add missing styles for sections */
++.fade-in {
++  animation: fadeIn 1.2s ease-in-out both;
++  padding: 60px 0;
++}
++
++.fade-in-light {
++  animation: fadeIn 1.2s ease-in-out both;
++  padding: 60px 0;
++  background-color: rgba(248, 249, 250, 0.8);
++}
++
++.card-style {
++  background: rgba(255, 255, 255, 0.9);
++  padding: 40px;
++  border-radius: 12px;
++  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
++  margin: 20px 0;
++}
++
++.section-title {
++  font-size: 2.5rem;
++  color: #002147;
++  margin-bottom: 30px;
++  font-weight: 700;
++}
++
++.section-text {
++  font-size: 1.1rem;
++  line-height: 1.8;
++  color: #555;
++  text-align: justify;
++}
++
++/* Hero Section */
++.hero-section {
++  padding: 120px 0;
++  background: linear-gradient(135deg, rgba(0, 33, 71, 0.8), rgba(0, 86, 179, 0.8));
++  color: white;
++  margin-bottom: 0;
++}
++
+ /* Root styling */
